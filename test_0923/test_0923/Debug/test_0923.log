@@ -1,0 +1,3 @@
+﻿  jhj_0923.c
+c:\users\jhj\source\repos\test_0923\test_0923\jhj_0923.c(244): warning C4047: “初始化”:“char”与“char [2]”的间接级别不同
+  test_0923.vcxproj -> C:\Users\jhj\source\repos\test_0923\Debug\test_0923.exe
