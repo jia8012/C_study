@@ -12,11 +12,12 @@ int main() {
 			if (num%i == 0)
 			{
 				j += i;
-				if (num == j)
-				{
-					printf("%d ", num);
-				}
 			}
+
+		}
+		if (num == j)
+		{
+			printf("%d ", num);
 		}
 	}
 	return 0;
