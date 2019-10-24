@@ -1,2 +1,3 @@
 ﻿  test_1022.c
+d:\c_study\test_1022\test_1022\test_1022.c(44): warning C4047: “初始化”:“char”与“void *”的间接级别不同
   test_1022.vcxproj -> D:\C_study\test_1022\Debug\test_1022.exe

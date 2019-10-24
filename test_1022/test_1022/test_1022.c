@@ -24,16 +24,76 @@
 //}
 
 
+//int main()
+//{
+//	int a = 1;
+//	int b = 1;
+//	int i = 1;
+//	for (i = 1; i <= 20; i++)
+//	{
+//		printf("%d\n%d\n", a, b);
+//		a = a + b;
+//		b = a + b;
+//	}
+//	return 0;
+//}
+
+
 int main()
 {
-	int a = 1;
-	int b = 1;
-	int i = 1;
-	for (i = 1; i <= 20; i++)
+	char a = NULL;
+	printf("请再输入一个字母\n");
+	a = getchar();
+	switch (a)
 	{
-		printf("%d\n%d\n", a, b);
-		a = a + b;
-		b = a + b;
+	case 's':
+		while (1)
+		{
+			getchar();
+			printf("请再输入一个字母\n");
+			a = getchar();
+			if (a == 'u')
+			{
+				printf("Sunday");
+				return 0;
+			}
+			if (a == 'a')
+			{
+				printf("Saturday");
+				return 0;
+			}
+		}
+		break;
+	case 'm':
+		printf("Monday");
+		break;
+	case 't':
+		while (1)
+		{
+			getchar();
+			printf("请再输入一个字母\n");
+			a = getchar();
+			if (a == 'u')
+			{
+				printf("Tuesday");
+				return 0;
+			}
+			if (a == 'h')
+			{
+				printf("Thursday");
+				return 0;
+			}
+		}
+		break;
+	case 'w':
+		printf("Wednesday");
+		break;
+	case 'f':
+		printf("Friday");
+		break;
+	default:
+		printf("请重新输入\n");
+		break;
 	}
 	return 0;
 }
