@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
+#include<string.h>
 
 //int main() {
 //	int num = 1;
@@ -37,63 +38,92 @@
 //	}
 //	return 0;
 //}
-
+//
+//
+//int main()
+//{
+//	char a = NULL;
+//	printf("请再输入一个字母\n");
+//	a = getchar();
+//	switch (a)
+//	{
+//	case 's':
+//		while (1)
+//		{
+//			getchar();
+//			printf("请再输入一个字母\n");
+//			a = getchar();
+//			if (a == 'u')
+//			{
+//				printf("Sunday");
+//				return 0;
+//			}
+//			if (a == 'a')
+//			{
+//				printf("Saturday");
+//				return 0;
+//			}
+//		}
+//		break;
+//	case 'm':
+//		printf("Monday");
+//		break;
+//	case 't':
+//		while (1)
+//		{
+//			getchar();
+//			printf("请再输入一个字母\n");
+//			a = getchar();
+//			if (a == 'u')
+//			{
+//				printf("Tuesday");
+//				return 0;
+//			}
+//			if (a == 'h')
+//			{
+//				printf("Thursday");
+//				return 0;
+//			}
+//		}
+//		break;
+//	case 'w':
+//		printf("Wednesday");
+//		break;
+//	case 'f':
+//		printf("Friday");
+//		break;
+//	default:
+//		printf("请重新输入\n");
+//		break;
+//	}
+//	return 0;
+//}
+int len(char arr[])
+{
+	int i = 0;
+	while (arr[i]!=0)
+	   i++; 
+	return i;
+}
 
 int main()
 {
-	char a = NULL;
-	printf("请再输入一个字母\n");
-	a = getchar();
-	switch (a)
+	char arr[40] = {0};
+	int length = 0, col = 0;
+	scanf("%d", &col);
+	getchar();
+	gets(arr);
+	length = len(arr);
+	for (int i = 0; i < col; i++)
 	{
-	case 's':
-		while (1)
+		for (int j = i; j < length;)
 		{
-			getchar();
-			printf("请再输入一个字母\n");
-			a = getchar();
-			if (a == 'u')
-			{
-				printf("Sunday");
-				return 0;
-			}
-			if (a == 'a')
-			{
-				printf("Saturday");
-				return 0;
-			}
+			printf("%c", arr[j]);
+			j += col;
 		}
-		break;
-	case 'm':
-		printf("Monday");
-		break;
-	case 't':
-		while (1)
-		{
-			getchar();
-			printf("请再输入一个字母\n");
-			a = getchar();
-			if (a == 'u')
-			{
-				printf("Tuesday");
-				return 0;
-			}
-			if (a == 'h')
-			{
-				printf("Thursday");
-				return 0;
-			}
-		}
-		break;
-	case 'w':
-		printf("Wednesday");
-		break;
-	case 'f':
-		printf("Friday");
-		break;
-	default:
-		printf("请重新输入\n");
-		break;
+		printf("\n");
 	}
+    //this is a test case
+	printf("%d", length);
 	return 0;
 }
