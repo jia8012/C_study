@@ -98,32 +98,64 @@
 //	}
 //	return 0;
 //}
-int len(char arr[])
-{
-	int i = 0;
-	while (arr[i]!=0)
-	   i++; 
-	return i;
-}
+//
+//int len(char arr[])
+//{
+//	int i = 0;
+//	while (arr[i]!=0)
+//	   i++; 
+//	return i;
+//}
+//
+//int main()
+//{
+//	char arr[40] = {0};
+//	int length = 0, col = 0;
+//	scanf("%d", &col);
+//	getchar();
+//	gets(arr);
+//	length = len(arr);
+//	for (int i = 0; i < col; i++)
+//	{
+//		for (int j = i; j < length;)
+//		{
+//			printf("%c", arr[j]);
+//			j += col;
+//		}
+//		printf("\n");
+//	}
+//    //this is a test case
+//	printf("%d", length);
+//	return 0;
+//}
+
 
 int main()
 {
-	char arr[40] = {0};
-	int length = 0, col = 0;
-	scanf("%d", &col);
-	getchar();
-	gets(arr);
-	length = len(arr);
-	for (int i = 0; i < col; i++)
+	int num = 0;
+	scanf("%d", &num);
+	printf("%d\n", num);
+	int i = 0;
+	int ret = 0;
+	for (i = 1; 1 < 1000; i++)
 	{
-		for (int j = i; j < length;)
+		ret = (i*i) * 2 - 1;
+		if (ret >= num)break;
+	}
+	ret = num - ((i - 1)*(i - 1) * 2 - 1);
+	printf("¶à³ö%d¸ö\n", ret);
+	printf("%d\n", 2*i-3);
+	int j = 0;
+	int k = 0;
+	for (j = 1; j <= (2*i-3); j++) 
+	{
+		for (k = 1; k <= (2*i-3); k++)
 		{
-			printf("%c", arr[j]);
-			j += col;
+			printf("*");
 		}
 		printf("\n");
 	}
-    //this is a test case
-	printf("%d", length);
+
+	
 	return 0;
 }
