@@ -134,7 +134,7 @@ int main()
 {
 	int num = 0;
 	scanf("%d", &num);
-	printf("%d\n", num);
+	//printf("%d\n", num);
 	int i = 0;
 	int ret = 0;
 	for (i = 1; 1 < 1000; i++)
@@ -144,18 +144,38 @@ int main()
 	}
 	ret = num - ((i - 1)*(i - 1) * 2 - 1);
 	printf("多出%d个\n", ret);
-	printf("%d\n", 2*i-3);
+	printf("%d行\n", 2 * i - 3);
+	printf("%d", i);
+	int row = 2 * i - 3;//行数
 	int j = 0;
 	int k = 0;
-	for (j = 1; j <= (2*i-3); j++) 
+	for (j = 0; j < i - 1; j++) 
 	{
-		for (k = 1; k <= (2*i-3); k++)
-		{
-			printf("*");
-		}
-		printf("\n");
-	}
 
-	
+	}
+	//char arr[20][20] = {'#'};
+	//for (j = 0; j < 20; j++)
+	//{
+	//	for (k = 0; k < 20; k++)
+	//	{
+	//		arr[j][k] = '#';
+	//		printf("%c", arr[j][k]);
+	//	}
+	//	printf("\n");
+	//}
+	//for (j = 0; j < i-1; j++)
+	//{
+	//	for (k = 0; k < row; k++)
+	//	{
+	//		if (j-k>0&&)
+	//		{
+	//			arr[j][k] = '*';
+	//			printf("%c", arr[j][k]);
+	//		}
+	//	}
+	//	printf("\n");
+	//}
+	//int a = 0; int b = 0; int c = 0; int d = 0;
 	return 0;
 }
+
