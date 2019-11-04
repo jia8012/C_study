@@ -1,0 +1,3 @@
+﻿  test.cpp
+test.obj : error LNK2005: _main 已经在 kxdsj.obj 中定义
+D:\C_study\TainTiSai\Debug\TainTiSai.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
